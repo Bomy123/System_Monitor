@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    <Button
+        android:id="@+id/appmanage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_activity_app__manage" />
+    <Button
+        android:id="@+id/clearalldata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appmanage"
+        android:text="@string/clearalldata_text" />
+    <Button
+        android:id="@+id/clearallcache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clearalldata"
+        android:nextFocusDown="@+id/spaceContent"
+        android:text="@string/clearallcache_text" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clearallcache"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/spaceContent"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="true"
+            android:nextFocusUp="@+id/clearallcache"
+            android:paddingLeft="10dp"
+            android:scrollbars="vertical"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/sdcardContent"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:nextFocusUp="@+id/clearallcache"
+            android:scrollbars="vertical"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/mainprogressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+</RelativeLayout>

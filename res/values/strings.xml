@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">系统检测</string>
+    <string name="title_activity_main_activity1">系统检测</string>
+    <string name="app_label">系统检测</string>
+    <string name="title_activity_app_detils">应用详情</string>
+    <string name="title_activity_app__manage">应用列表</string>
+    <string name="btn_activity_app__manage">应用管理</string>
+    <string name="showalltext">所有</string>
+    <string name="onrunningtext">运行中</string>
+    <string name="sysapptext">系统应用</string>
+    <string name="userapptext">用户应用</string>
+    <string name = "app_size_text">总大小</string>
+    <string name = "code_size_text">应用</string>
+    <string name = "data_size_text">数据</string>
+    <string name = "cache_size_text">缓存</string>
+    <string name = "sysapp_text">系统应用,不可卸载</string>
+    <string name = "userapp_text">用户应用</string>
+    <string name = "running_text">运行中</string>
+    <string name = "stop_text">已停止</string>
+    <string name = "force_stop_text">强制停止</string>
+    <string name = "uninstall_text">卸载程序</string>
+    <string name = "cleardata_text">清除数据</string>
+    <string name = "clearcache_text">清除缓存</string>
+    <string name = "clearallcache_text">一键清理所有缓存</string>
+	<string name = "clearalldata_text">深度清理所有数据</string>
+</resources>

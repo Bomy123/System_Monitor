@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/appdetailicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/app_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/appdetailicon"
+        android:layout_toRightOf="@id/appdetailicon" 
+        android:layout_toEndOf="@id/appdetailicon" 
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/app_detail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/appdetailicon"
+        android:layout_toRightOf="@id/appdetailicon"
+        android:layout_toEndOf="@id/appdetailicon" />
+
+    <TextView
+        android:id="@+id/app_detail_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_alignBottom="@id/appdetailicon"
+        android:layout_toRightOf="@id/app_detail_status"
+        android:layout_toEndOf="@id/app_detail_status" />
+
+    <Button
+        android:id="@+id/uninstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/appdetailicon"
+        android:text="@string/uninstall_text" />
+
+    <Button
+        android:id="@+id/forcestop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uninstall"
+        android:text="@string/force_stop_text" />
+    
+<LinearLayout 
+    android:id="@+id/size"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forcestop"
+        android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/size_name"
+        android:layout_width="0px"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:text="@string/app_size_text"
+        />
+
+    <TextView
+        android:id="@+id/size_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="4"
+        />
+</LinearLayout>
+
+<LinearLayout 
+    android:id="@+id/code"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/size"
+        android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/code_name"
+        android:layout_width="0px"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:text="@string/code_size_text"
+        />
+
+    <TextView
+        android:id="@+id/code_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="4"
+        />
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/data"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/code"
+        android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/data_name"
+        android:layout_width="0px"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:text="@string/data_size_text"
+        />
+
+    <TextView
+        android:id="@+id/data_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="4"
+        />
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/cleardata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cleardata_text"
+        android:layout_below="@id/data"
+         />
+<LinearLayout 
+    android:id="@+id/cache"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cleardata"
+        android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/cache_name"
+        android:layout_width="0px"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:text="@string/cache_size_text"
+        />
+
+    <TextView
+        android:id="@+id/cache_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="4"
+        />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/clearcache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clearcache_text" 
+        android:layout_below="@id/cache"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" 
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
